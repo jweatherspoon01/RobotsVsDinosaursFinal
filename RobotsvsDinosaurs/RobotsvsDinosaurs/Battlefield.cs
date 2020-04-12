@@ -5,8 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RobotsvsDinosaurs
-{
-    class Battlefield
-    {
+{   
+    public class Battlefield
+    {   //member variables
+
+
+
+        //contructor
+        public Battlefield()
+        {
+                
+
+
+        }
+
+        //member methods
     }
 }
