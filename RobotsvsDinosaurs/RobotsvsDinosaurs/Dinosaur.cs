@@ -15,18 +15,25 @@ namespace RobotsvsDinosaurs
         public int attackPower ;
 
     
-    //contructor
+        //contructor
         public Dinosaur(string dinosaur, int healthLevel, int attackPower)
         {
          dinosaurType = dinosaur;
          this.healthLevel = healthLevel;
          this.attackPower = attackPower;
                 
-
-
         }
-
         //member methods
+        //Fleet robos = new Fleet("RobotBod", "RobotTed", "JeffTheRobot");
+        //int RobotHealth = 100; 
+        public int Attack()
+        {
+            //use attackpower on robot
+            return attackPower;
+            
+
+            
+        }
 
 
     }

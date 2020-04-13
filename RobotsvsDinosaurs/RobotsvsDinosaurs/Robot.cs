@@ -25,6 +25,13 @@ namespace RobotsvsDinosaurs
         }
 
         //member methods
+        public int Attack()
+        {
+
+            return attackPower;
+
+        }
+
 
     }
 }
