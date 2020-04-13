@@ -20,11 +20,11 @@ namespace RobotsvsDinosaurs
          this.robo2 = new Robot(robo2, 100, 25);
          this.robo3 = new Robot(robo3, 100, 25);
 
-            robots = new List<Robot>();   
+            robots = new List<Robot>();  
 
         }
+        
         //member methods
-
         public void RoboList()
         {
             robots.Add(this.robo1);

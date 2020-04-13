@@ -42,14 +42,14 @@ namespace RobotsvsDinosaurs
                     robotattack(roboscounter);
                 }
                 
-                dinocounter++;
-                roboscounter++;
+                   dinocounter++;
+                   roboscounter++;
+
                 if (dinocounter > 2)
                 {
                     dinocounter = 0;
                     roboscounter = 0;
-                }
-                
+                }             
 
             }
             winner();
@@ -59,13 +59,14 @@ namespace RobotsvsDinosaurs
             //it checks for and an opponent and deals damage and checks if a dino is dead
             if (i < livedinos)
             {
-                Console.WriteLine("Robot " + (i+1) + " Is Attacking");
+                Console.WriteLine(robos.robots[i].robotName + " Is Attacking With Its " + robos.robots[i].Weapon.weapon);
+
                 dinos.dinosaurs[i].healthLevel -= robos.robots[i].attackPower;
+
                 if (dinos.dinosaurs[i].healthLevel <= 0)
                 {
                     dinos.dinosaurs.RemoveAt(i);
                     livedinos--;
-
                 }
             }
         }
@@ -73,13 +74,13 @@ namespace RobotsvsDinosaurs
         {
             if (i < liverobos)
             {
-                Console.WriteLine("Dinosuar " + (i+1) + " Is Attacking");
+                Console.WriteLine(dinos.dinosaurs[i].dinosaurType + " Is Attacking");
                 robos.robots[i].healthLevel -= dinos.dinosaurs[i].attackPower;
+
                 if (robos.robots[i].healthLevel <= 0)
                 {
                     robos.robots.RemoveAt(i);
                     liverobos--;
-
                 }
             }
         }
@@ -93,8 +94,7 @@ namespace RobotsvsDinosaurs
             else if (livedinos > liverobos)
             {
                 Console.WriteLine("Dinos are WinnerS");
-            }
-            
+            }            
             //livedinos 
 
         }

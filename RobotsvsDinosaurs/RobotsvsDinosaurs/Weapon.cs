@@ -10,14 +10,12 @@ namespace RobotsvsDinosaurs
     {   //member variables
         public string weapon;
 
-
         //contructor
         public Weapon(string WeaponType)
-        {
-         
-         weapon = WeaponType;
-        
-
+        {   
+            
+         weapon = WeaponType;      
+            
         }
 
         //member methods

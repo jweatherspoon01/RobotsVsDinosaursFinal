@@ -14,10 +14,10 @@ namespace RobotsvsDinosaurs
             //Dinosaur trex = new Dinosaur ("Trex", 100, 25);
             //Robot robot = new Robot("RobotBob", 100, 25); 
             
-            Fleet robos = new Fleet("RobotBod", "RobotTed", "JeffTheRobot");
-
+            Fleet robos = new Fleet("RobotBob", "RobotTed", "JeffTheRobot");
+                        
             Herd dinos = new Herd("Trex", "Brax","Tricep");
-
+                        
             Battlefield bunkerhill = new Battlefield(robos, dinos);
 
             bunkerhill.Battle();
